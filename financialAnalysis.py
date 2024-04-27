@@ -192,7 +192,7 @@ def main(st, iframe_style):
     are more prevalent than any other program, as indicated by their larger bubble sizes. Consequently, one can quickly deduce that more discounts are offered under these programs than others. School administrators 
     can use this graph to identify which discount types to offer more of, or perhaps to consider discontinuing specific discounts if they've been offered to too many students already.
     
-    Another valuable aspect of this data is its ability to highlight discount trends or outliers. For instance, we notice a reading indicating a discount of $1045, significantly reducing the billing amount to just $110. 
+    Another valuable aspect of this data is its ability to highlight discount trends or outliers. For instance, we notice a reading indicating a discount of 1045, significantly reducing the billing amount to just 110. 
     This could be due to an accidental or incorrect discount entry in our system. Having these graphs helps us quickly identify and track such issues, ensuring our balance sheets remain accurate and minimizing the need 
     for extensive error searches. This way, we can easily assess the data and detect outliers.   
         '''
