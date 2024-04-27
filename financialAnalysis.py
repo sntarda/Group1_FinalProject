@@ -175,7 +175,21 @@ def main(st, iframe_style):
     
     # Figure 6
     st.markdown("""
-    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[6]. TUITION STAT SUMMARY For Active Enrollments</h4>
+    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[5]. DISCOUNT DISTRIBUTION For Active Enrollments</h4>
+    """, unsafe_allow_html=True)
+    st.write(f'<iframe src="https://vizhub.com/uzairnaeem015/2bc9ce8310ac4095964fee8c7d1714c4?mode=embed&embed=branded" width="1024" height="612" scrolling="no" frameborder="no"></iframe>', unsafe_allow_html=True)
+
+    st.subheader("Figure 6: SCATTER PLOT (D3.js)")
+    st.write("\n\n")
+    st.subheader("Analysis")
+    
+    # Divider
+    st.image('top_data-science-divider-1.png',  width=1024, output_format='auto')
+    st.write("\n\n")  
+    
+    # Figure 7
+    st.markdown("""
+    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[7]. TUITION STAT SUMMARY For Active Enrollments</h4>
     """, unsafe_allow_html=True)
     
     # load dataset
@@ -186,7 +200,7 @@ def main(st, iframe_style):
         active_df = df[df['Status'] == 'Active']
         st.write("Data Overview for Active Enrollments:")
         st.write(active_df.describe().round(2))  # Show statistical summary for active enrollments
-        st.subheader("Figure 6: Description Summary Table (Python)")
+        st.subheader("Figure 7: Description Summary Table (Python)")
         st.write("\n\n")
         st.subheader("Analysis")
         st.write("Analyze here")
@@ -200,9 +214,9 @@ def main(st, iframe_style):
     st.image('top_data-science-divider-1.png',  width=1024, output_format='auto')
     st.write("\n\n")
     
-    # Figure 7
+    # Figure 8
     st.markdown("""
-    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[7]. AVERAGE PROGRAM BILLING BY MONTH</h4>
+    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[8]. AVERAGE PROGRAM BILLING BY MONTH</h4>
     """, unsafe_allow_html=True)
     
     df = confusion_matrix_data(data=any)
@@ -223,14 +237,14 @@ def main(st, iframe_style):
     # Display the plot in the Streamlit app
     st.pyplot(fig)
 
-    st.subheader("Figure 7: Confusion Matrix (Seaborn)")
+    st.subheader("Figure 8: Confusion Matrix (Seaborn)")
     st.write("\n\n")
     st.subheader("Analysis")
     st.write("Analyze here")
 
-    # Figure 8
+    # Figure 9
     st.markdown("""
-    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[8]. AVERAGE PROGRAM BILLING BY MONTH with Central Tendency</h4>
+    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[9]. AVERAGE PROGRAM BILLING BY MONTH with Central Tendency</h4>
     """, unsafe_allow_html=True)
 
     df = read_original_data()
@@ -254,14 +268,14 @@ def main(st, iframe_style):
 
     # Show the plot in Streamlit
     st.plotly_chart(fig)
-    st.subheader("Figure 8: Line Charge with Central Tendency Mark (Plotly Express)")
+    st.subheader("Figure 9: Line Charge with Central Tendency Mark (Plotly Express)")
     st.write("\n\n")
     st.subheader("Analysis")
     st.write("Analyze here")
     
-    # Figure 9
+    # Figure 10
     st.markdown("""
-    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[9]. BILLING-DISCOUNT DISTRIBUTION BY PROGRAM</h4>
+    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[10]. BILLING-DISCOUNT DISTRIBUTION BY PROGRAM</h4>
     """, unsafe_allow_html=True)
     
     df = pairplot_data(data=any)
@@ -277,6 +291,6 @@ def main(st, iframe_style):
     fig.update_traces(diagonal_visible=True)  # Remove the histograms on the diagonal
     st.plotly_chart(fig)
     
-    st.subheader("Figure 9: Interactive Pairplot (Ploty Express)")
+    st.subheader("Figure 10: Interactive Pairplot (Ploty Express)")
 
     
