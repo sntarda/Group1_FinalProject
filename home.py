@@ -36,8 +36,8 @@ def main(st):
     """, unsafe_allow_html=True)
     
     st.markdown("""
-    <h3 style='text-align: center; font-weight: bold; color: #3478f6; margin-bottom: -10px;'>GROUP 1 MEMBERS:</h3>
-    <p style='text-align: center; margin-top: 0px; font-size: 20px; font-weight: bold;'>Samir Tarda, Uzair Naeem, Vamsi Krishna, and Venkatesh Thentu</p>
+    <h3 style='text-align: left; font-weight: bold; color: #3478f6; margin-bottom: -10px;'>GROUP 1 MEMBERS:</h3>
+    <p style='text-align: left; margin-top: 0px; font-size: 20px; font-weight: bold;'>Samir Tarda, Uzair Naeem, Vamsi Krishna, and Venkatesh Thentu</p>
     """, unsafe_allow_html=True)
 
 
