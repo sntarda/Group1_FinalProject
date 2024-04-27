@@ -175,13 +175,28 @@ def main(st, iframe_style):
     
     # Figure 6
     st.markdown("""
-    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[5]. DISCOUNT DISTRIBUTION For Active Enrollments</h4>
+    <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[6]. ORIGINAL CHARGE VS. BILLED AMOUNT For Active Enrollments</h4>
     """, unsafe_allow_html=True)
     st.write(f'<iframe src="https://vizhub.com/uzairnaeem015/2bc9ce8310ac4095964fee8c7d1714c4?mode=embed&embed=branded" width="1024" height="612" scrolling="no" frameborder="no"></iframe>', unsafe_allow_html=True)
 
     st.subheader("Figure 6: SCATTER PLOT (D3.js)")
     st.write("\n\n")
     st.subheader("Analysis")
+    multi = '''
+    The scatter plot with bubble chart above depicts the relationship between the original charge amount and the billing amount (the cost of student enrollment per month after applying discounts) for active students only.
+    
+    On the x-axis, we have the billing amount, while the y-axis represents the charge amount. The range starts from 0 and goes up to 1400, which is the maximum charge amount per month for student enrollment. 
+    Different colors represent the program, with circle size indicating the applied discounted amount. Additionally, hovering over specific values provides additional information.
+    
+    This scatter plot aids in understanding the relationship between billing and charge amounts based on discounts. We observe that values in orange and red (representing Primary and Lower Elementary programs) 
+    are more prevalent than any other program, as indicated by their larger bubble sizes. Consequently, one can quickly deduce that more discounts are offered under these programs than others. School administrators 
+    can use this graph to identify which discount types to offer more of, or perhaps to consider discontinuing specific discounts if they've been offered to too many students already.
+    
+    Another valuable aspect of this data is its ability to highlight discount trends or outliers. For instance, we notice a reading indicating a discount of $1045, significantly reducing the billing amount to just $110. 
+    This could be due to an accidental or incorrect discount entry in our system. Having these graphs helps us quickly identify and track such issues, ensuring our balance sheets remain accurate and minimizing the need 
+    for extensive error searches. This way, we can easily assess the data and detect outliers.   
+        '''
+    st.markdown(multi, unsafe_allow_html=True)
     
     # Divider
     st.image('top_data-science-divider-1.png',  width=1024, output_format='auto')
