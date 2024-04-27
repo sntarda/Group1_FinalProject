@@ -217,8 +217,6 @@ def main(st, iframe_style):
         st.write(active_df.describe().round(2))  # Show statistical summary for active enrollments
         st.subheader("Figure 7: Description Summary Table (Python)")
         st.write("\n\n")
-        st.subheader("Analysis")
-        st.write("Analyze here")
     else:
         st.error("Required columns are missing from the data.")
 
@@ -254,8 +252,6 @@ def main(st, iframe_style):
 
     st.subheader("Figure 8: Confusion Matrix (Seaborn)")
     st.write("\n\n")
-    st.subheader("Analysis")
-    st.write("Analyze here")
 
     # Figure 9
     st.markdown("""
@@ -285,9 +281,7 @@ def main(st, iframe_style):
     st.plotly_chart(fig)
     st.subheader("Figure 9: Line Charge with Central Tendency Mark (Plotly Express)")
     st.write("\n\n")
-    st.subheader("Analysis")
-    st.write("Analyze here")
-    
+
     # Figure 10
     st.markdown("""
     <h4 style='text-align: left; font-weight: bold; color: #204760; margin-bottom: -10px;'>[10]. BILLING-DISCOUNT DISTRIBUTION BY PROGRAM</h4>
