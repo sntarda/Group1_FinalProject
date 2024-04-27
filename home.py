@@ -26,13 +26,13 @@ def create_contribution_table():
 
 def main(st):
 
-    st.markdown("<h1 style='text-align: center;'>FINAL GROUP PROJECT</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: left;'>FINAL GROUP PROJECT</h1>", unsafe_allow_html=True)
 
     # Enhanced header styles
     st.markdown("""
-    <h2 style='text-align: center;'>CSCE 5320.003: Scientific Data Visualization</h2>
-    <h2 style='text-align: center;'>PROJECT DOMAIN: Educational Finance</h2>
-    <h2 style='text-align: center;'>PROJECT TITLE: School Strategic Analytics | Finance & Enrollment</h2>
+    <h2 style='text-align: left;'>CSCE 5320.003: Scientific Data Visualization</h2>
+    <h2 style='text-align: left;'>PROJECT DOMAIN: Educational Finance</h2>
+    <h2 style='text-align: left;'>PROJECT TITLE: School Strategic Analytics | Finance & Enrollment</h2>
     """, unsafe_allow_html=True)
     
     st.markdown("""
